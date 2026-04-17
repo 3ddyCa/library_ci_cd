@@ -1,0 +1,10 @@
+{
+  "book": {
+    "titre": "Les poignées de portes à travers les siècles",
+    "auteur": " Jacques Rouxel",
+    "description": "Un livre sur les poignées de portes (Lavez vous les mains bon sang)",
+    "datePublication": "1968-04-29",
+    "couverture": "./assets/img/1083625_00.jpg",
+    "categorie": "Mobilier"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "validUser": {
+    "firstname": "Alice",
+    "lastname": "Larue",
+    "email": "alice.larue@test.fr",
+    "subscription": "student",
+    "birthDate": "1995-05-15"
+  },
+  "validUser2": {
+    "firstname": "Christine",
+    "lastname": "LePorte",
+    "email": "christine@test.fr",
+    "subscription": "comtpable",
+    "birthDate": "2000-10-15"
+  },
+  "validUser3": {
+    "firstname": "bill",
+    "lastname": "boquet",
+    "email": "BBboule@test.fr",
+    "subscription": "surveillant pénitenciaire",
+    "birthDate": "1960-02-07"
+  },
+  "minimalUser": {
+    "firstname": "Bob",
+    "lastname": "Jet",
+    "email": "bob@test.com",
+    "subscription": "adult"
+
+  }
+}
