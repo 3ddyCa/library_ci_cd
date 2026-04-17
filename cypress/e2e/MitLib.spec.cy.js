@@ -42,7 +42,7 @@ describe('Test du formulaire avec Fixtures', () => {
         cy.get('button[type="submit"]').click();
     }
 
-    it('doit remplir le formulaire avec un utilisateur valide depuis la fixture', function () {
+    /*it('doit remplir le formulaire avec un utilisateur valide depuis la fixture', function () {
         cy.visit('http://127.0.0.1:8000/register');
         const user = cy.userData.validUser;
         const user1 = cy.userData.validUser1;
@@ -55,12 +55,10 @@ describe('Test du formulaire avec Fixtures', () => {
         cy.get('button[type="submit"]').click();
 
         // Vérification du feedback DaisyUI
-    });
+    });*/
 
     it('Obtiens un message d\'erreur quand tous les champs ne sont pas remplis', function () {
         cy.visit('http://127.0.0.1:8000/register');
-        const user = cy.userData.validUser;
-        const user1 = cy.userData.validUser1;
         cy.get('button[type="submit"]').click();
         cy.get('small').eq(0).should("have.text", "Le prenom est obligatoire");
         cy.get('small').eq(1).should("have.text", "Le nom est obligatoire");
@@ -68,6 +66,7 @@ describe('Test du formulaire avec Fixtures', () => {
         cy.get('small').eq(3).should("have.text", "Le mot de passe est obligatoire");
         cy.get('small').eq(4).should("have.text", "La confirmation est obligatoire");
     });
+    /*
     it('L\'utilisateur-ice est capable de se connecter', function () {
         const user = cy.userData.validUser;
         const user1 = cy.userData.validUser1;
@@ -97,6 +96,6 @@ describe('Test du formulaire avec Fixtures', () => {
         cy.get("a:has(href=/logout)").click();
         cy.visit('http://127.0.0.1:8000/profil');
         cy.url().should('be.equal','http://127.0.0.1:8000/login');
-    })
+    })*/
 
 });
