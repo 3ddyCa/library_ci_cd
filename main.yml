@@ -46,7 +46,10 @@ jobs:
           composer install
       - name: copier e.env dansdocker.env
         run:
-          touch .env 
+          cp .en.docker .env 
+      - name: créer la bdd
+        run:
+          mysql -h 127.0.0.1 -P 3306 -u root -proot < db.sql  
       
       - name: démarrer le serveur PHP
         run: |
