@@ -4,11 +4,11 @@ name: e2e tests cypress et PHP
 on:
   push:
     branches:
-      - feature-eddy
+      - 'feature-eddy'
   pull_request:
     branches:
-      - feature-eddy
-      - main
+      - 'feature-eddy'
+      - 'main'
 # environnement
 jobs:
   build:
