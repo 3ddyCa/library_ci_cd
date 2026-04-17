@@ -44,10 +44,10 @@ jobs:
       - name: installer les dépendances
         run: | 
           composer install
-      - name: copier e.env dansdocker.env
+      - name: copier .env dansdocker.env
         run:
           cp .env.docker .env 
-          echo "DATABASE_HOST=localhost">> .env
+          echo "DATABASE_HOST=localhost" >> .env
       - name: créer la bdd
         run:
           mysql -h 127.0.0.1 -P 3306 -u root -proot < db.sql  
