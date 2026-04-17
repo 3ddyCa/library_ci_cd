@@ -4,11 +4,11 @@ name: e2e tests cypress et PHP
 on:
   push:
     branches:
-      - 3ddyCa/library_ci_cd:feature-eddy
+      - feature-eddy
   pull_request:
     branches:
-      - 3ddyCa/library_ci_cd:feature-eddy
-      - 3ddyCa/library_ci_cd:main
+      - feature-eddy
+      - main
 # environnement
 jobs:
   build:
